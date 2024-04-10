@@ -24,10 +24,11 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/@popperjs/core/dist/umd/popper.min.js",
+            "node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {
@@ -91,5 +92,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "fdf34ed3-3130-4347-b8d0-cfbf972c2f40"
   }
 }
