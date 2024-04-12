@@ -12,9 +12,5 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'udemy-project';
-  eleccion = true;
-  isTrue(eleccion: boolean){
-    this.eleccion = eleccion;
-  }
+  
 }
