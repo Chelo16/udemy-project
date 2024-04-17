@@ -15,6 +15,7 @@ import { Subscription } from 'rxjs';
 export class ShoppingListComponent {
   ingredients: Ingredient[];
   private igCahngeSub: Subscription;
+  
   constructor(private shoppingService: ShoppingService){}
 
   ngOnInit(): void {
@@ -29,5 +30,8 @@ export class ShoppingListComponent {
     //Called once, before the instance is destroyed.
     //Add 'implements OnDestroy' to the class.
     this.igCahngeSub.unsubscribe();
+  }
+  onEditItem(index: number){
+    this.shoppingService.startedEditing.next(index);
   }
 }
